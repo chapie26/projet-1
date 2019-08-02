@@ -131,7 +131,7 @@ section#banner {
 	background: url("image/bg1.jpg") no-repeat center;
 	-webkit-background-size: cover;
 	background-size: cover;
-	min-width: 100px;
+	/*min-width: 320px;*/
 	height: 550px;
 	margin-top: 110px;
 	overflow-x: hidden;
@@ -277,16 +277,15 @@ section#service{
 	border-radius: 50%;
 	border: 3px solid white;
 	background: rgb(77, 156, 201);
-	margin-top: -17px;
-	margin-left: 30px;
+	position: absolute;
+	right: -8px;
 }
 
-.pointb {
+/*.pointb {
 	margin-left: 27px;
-}
+}*/
 
 .pointc {
-	position: absolute;
 	left: 39px;
 	bottom: -11px;
 	margin-left: 0;
@@ -306,11 +305,9 @@ section#service{
 	margin-right: 20px;
 }
 
-/*.list_service {
-	max-width: 550px;
-	margin-top: 70px;
-	list-style-type: none;
-}*/
+.list_service {
+	max-width: 400px;
+}
 
 #flex_list {
 	display: flex;
@@ -321,9 +318,7 @@ section#service{
 
 .flex_service {
 	display: flex;
-	margin-bottom: 40px;
-/*	align-items: center;
-*/}
+	margin-bottom: 40px;}
 
 .cercle {
 	width: 60px;
@@ -331,12 +326,14 @@ section#service{
 	border-radius: 50%;
 	border: 1px solid rgb(164, 164, 164);
 	display: flex;
+	position: relative;
+	align-items: center;
 }
 
 .fa {
 	color: rgb(77, 156, 201);
 	margin-left: 18px;
-	margin-top: 22px;
+	/*margin-top: 22px;*/
 }
 
 .fa-pie-chart {
@@ -484,10 +481,14 @@ h4 {
 /*Footer*/
 
 .map { 
-	margin-top: 30px;
 	display: flex;
 	flex-direction: column;
 	position: relative;
+}
+
+iframe {
+	width: 100%;
+	height: 500px;
 }
 
 .filtre {
@@ -545,11 +546,112 @@ input {
 	}
 
 	#header {
-		width: 480px;
+		width: 100%;
 		flex-direction: column;
+	}
+
+	.logo {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+
+	nav ul {
+		position: relative;
+		margin-left: -20px;
+
+	}
+
+	nav li {
+		width: 70px;
+	}
+
+	.selected_nav {
+		width: 70px;
+		top: -5px;
+	}
+
+	section#banner {
+		width: 100%;
+	}
+
+	.selected_banner {
+		width: 100px;
+	}
+
+	.text_banner {
+		max-width: 300px;
+		margin: auto;
+	}
+
+	section#service {
+		width: 100%;
+	}
+
+	.marge_tete_section {
+		max-width: 300px;
+	}
+
+/*	.text_section {
+		flex-direction: column;
+	}*/
+
+	#iMac {
+		display: block;
+		max-width: 300px;
+	}
+
+	#iMac img {
+		margin-right: 0;
+		width: 300px;
+	}
+
+	#flex_list {
+		margin: 10px;
+	}
+
+	.list_service {
+		width: 220px;
+	}
+
+	section#projet {
+		width: 100%;
 	}
 
 	.img_projet {
 		flex-direction: column;
+		align-items: center;
+		width: 320px;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+	}
+
+	.liens_projets ul {
+		margin-left: -40px;
+	}
+
+	.liens_projets li {
+		width: 75px;
+	}
+
+	.bandeau {
+		display: block;
+	}
+
+	.cercle_rempli {
+		top: 0;
+	}
+
+	.map {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contact {
+		margin-right: auto;
+		right: auto;
+		margin-top: auto;
+		width: 250px;
+		height: 400px;
 	}
 }
