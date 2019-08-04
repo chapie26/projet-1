@@ -131,7 +131,6 @@ section#banner {
 	background: url("image/bg1.jpg") no-repeat center;
 	-webkit-background-size: cover;
 	background-size: cover;
-	/*min-width: 320px;*/
 	height: 550px;
 	margin-top: 110px;
 	overflow-x: hidden;
@@ -150,11 +149,9 @@ section#banner {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-end;
-	/*text-align: center;*/
 	background-color: black;
 	position: absolute;
 	left: 0;
-	/*margin-left: -30px;*/
 	width: 30px;
 	height: 60px;
 	border-radius: 0 30px 30px 0;
@@ -166,12 +163,10 @@ section#banner {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	/*text-align: center;*/
 	background-color: black;
 	position: absolute;
 	right: 0;
-/*	margin-right: -30px;
-*/	width: 30px;
+	width: 30px;
 	height: 60px;
 	border-radius: 30px 0 0 30px;
 	opacity: 0.33;
@@ -263,7 +258,6 @@ section#service{
 }
 
 .trait {
-	/*border: 1px solid rgb(164, 164, 164);*/
 	width: 100px;
 	height: 1px;
 	margin: auto;
@@ -280,10 +274,6 @@ section#service{
 	position: absolute;
 	right: -8px;
 }
-
-/*.pointb {
-	margin-left: 27px;
-}*/
 
 .pointc {
 	left: 39px;
@@ -333,7 +323,6 @@ section#service{
 .fa {
 	color: rgb(77, 156, 201);
 	margin-left: 18px;
-	/*margin-top: 22px;*/
 }
 
 .fa-pie-chart {
@@ -352,13 +341,11 @@ section#service{
 section#projet{
 	display: flex;
 	flex-direction: column;
-/*	justify-content: center;
-*/	align-items: center;
+	align-items: center;
 	background-color: rgb(242, 242, 242);
 }
 
 .liens_projets ul {
-    /*list-style-type: none;*/
     display: flex;
     height: 40px;    
 }
@@ -442,7 +429,6 @@ section#projet{
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	line-height: 1px;
 }
 
 .cercle_rempli {
@@ -467,8 +453,13 @@ section#projet{
 }
 
 .text_item {
-	margin: 10px;
+	margin: 0 10px 10px;
 	opacity: 1;
+}
+
+.text_item h6 {
+	margin-top: 10px;
+	margin-bottom: 0;
 }
 
 h4 {
@@ -590,11 +581,7 @@ input {
 	.marge_tete_section {
 		max-width: 300px;
 	}
-
-/*	.text_section {
-		flex-direction: column;
-	}*/
-
+	
 	#iMac {
 		display: block;
 		max-width: 300px;
