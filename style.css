@@ -204,7 +204,7 @@ section#banner {
 }
 
 p {
-	font-size: 0.6em;
+	font-size: 0.8em;
 	font-weight: 500;
 	line-height: 25px;
 }
@@ -541,7 +541,7 @@ input {
 /*****  Responsive  ******/
 /*************************/
 
-@media all and (max-device-width: 480px) {
+@media all and (max-width: 480px) {
 	body {
 		max-width: 480px;
 	}
@@ -650,5 +650,46 @@ input {
 		margin-top: auto;
 		width: 250px;
 		height: 400px;
+	}
+}
+
+@media all and (min-width: 481px) and (max-width: 1023px) {
+	
+	nav ul {
+		margin-left: -20px;
+	}
+
+	nav li {
+		width: 70px;
+	}
+
+	.selected_nav {
+		width: 70px;
+	}
+
+	#iMac {
+		width: 100%;
+		align-items: center;
+	}
+
+	#iMac img {
+		width: 400px;
+	}
+
+	.flex_service {
+		flex-direction:column;
+		align-items:center;
+	}
+
+	.img_projet {
+		width: 100%;
+	}
+
+	.contain_img {
+		width: 45%;
+	}
+
+	.bandeau {
+		display: block;
 	}
 }
